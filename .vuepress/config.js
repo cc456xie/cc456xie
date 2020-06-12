@@ -41,20 +41,11 @@ module.exports = {
           "link": "https://github.com/cc456xie"
         }
       ],      
-      lastUpdated: '最后更新:',
+      lastUpdated: '最后更新 ',
       type: "blog",
       author: "cc456xie",
     },
     plugins: [
-      [
-        '@vuepress/last-updated',
-        {
-          transformer: (timestamp, lang) => {
-            moment.locale(lang)
-            return moment(timestamp).fromNow()
-          }
-        }
-      ],
     ["vuepress-plugin-auto-sidebar", {}]
     ]
    
